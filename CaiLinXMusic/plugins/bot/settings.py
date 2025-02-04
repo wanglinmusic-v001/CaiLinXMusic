@@ -27,6 +27,7 @@ from CaiLinXMusic.utils.database import (
     skip_off,
     skip_on,
 )
+from CaiLinXMusic.utils import bot_sys_stats
 from CaiLinXMusic.utils.decorators.admins import ActualAdminCB
 from CaiLinXMusic.utils.decorators.language import language, languageCB
 from CaiLinXMusic.utils.inline.settings import (
@@ -56,7 +57,7 @@ async def gib_repo(client, CallbackQuery, _):
     await CallbackQuery.edit_message_media(
         InputMediaVideo("https://files.catbox.moe/4ulx7l.mp4"),
         reply_markup=InlineKeyboardMarkup(
-            [[InlineKeyboardButton(text=" နောက်သို့ ", callback_data=f"settingsback_helper")]]
+            [[InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper")]]
         ),
     )
 
@@ -90,11 +91,12 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
         await app.resolve_peer(OWNER_ID)
         OWNER = OWNER_ID
         buttons = private_panel(_)
+        UP, CPU, RAM, DISK = await bot_sys_stats()
         return await CallbackQuery.edit_message_media(
             InputMediaPhoto(
                 media=START_IMG_URL,
                 caption=_["start_2"].format(
-                    CallbackQuery.from_user.first_name, app.mention),
+                    CallbackQuery.from_user.first_name, app.mention, UP, DISK, CPU, RAM)),
             ),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
