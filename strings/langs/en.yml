@@ -223,8 +223,8 @@ stream_2 : "➲ <b>စတင်ထုတ်လွှင့်နေပြီ |</
 stream_3 : "➲ <b>ပြုလုပ်သူ ‣ [WangLin](https://t.me/ZuriOfficialBoy)"
 
 #General
-CLOSE_BUTTON  : " ပိတ်သည် "
-CLOSEMENU_BUTTON  : " ပိတ်သည် "
+CLOSE_BUTTON  : "↻ ᴄʟᴏsᴇ ↻"
+CLOSEMENU_BUTTON  : "↻ ᴄʟᴏsᴇ ↻"
 BACK_BUTTON : "↻ ʙᴀᴄᴋ ↻"
 NEXT_PAGE: "▷"
 BACK_PAGE: "◁"
