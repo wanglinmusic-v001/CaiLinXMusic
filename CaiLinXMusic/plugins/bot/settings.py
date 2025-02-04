@@ -55,7 +55,7 @@ async def settings_mar(client, message: Message, _):
 @languageCB
 async def gib_repo(client, CallbackQuery, _):
     await CallbackQuery.edit_message_media(
-        InputMediaVideo("https://files.catbox.moe/4ulx7l.mp4"),
+        InputMediaVideo("https://files.catbox.moe/nff0bl.mp4"),
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton(text="နောက်သို့ပြန်သွားရန်", callback_data=f"settingsback_helper")]]
         ),
