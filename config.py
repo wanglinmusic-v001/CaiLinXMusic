@@ -21,6 +21,13 @@ PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 900))
 
+CLEANMODE_DELETE_MINS = int(
+    getenv("CLEANMODE_MINS", "18000")
+)  # Remember to give value in Seconds
+
+# Token allow for access youtube songs. [ True = use token data, False = use cookies ]
+TOKEN_ALLOW = os.getenv("TOKEN_ALLOW", "False")
+
 # Chat id of a group for logging bot's activities
 LOGGER_ID = int(getenv("LOGGER_ID", None))
 
