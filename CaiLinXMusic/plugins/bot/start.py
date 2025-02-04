@@ -86,7 +86,7 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
-        await message.reply_sticker("CAACAgUAAxkBAAMFZ448RGxjM8j2H36wdqeXeO1CajMAAo8SAAKb63BXikWOR4jz5Ys2BA")
+        UP, CPU, RAM, DISK = await bot_sys_stats()
         await message.reply_photo(
             photo=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
