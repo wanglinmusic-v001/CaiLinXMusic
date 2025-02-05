@@ -14,8 +14,31 @@ MESSAGE = f"""** ‣ ᴀᴅᴅ ~ @{app.username}  ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ
 ‣ ᴢᴇʀᴏ ᴅᴏᴡɴᴛɪᴍᴇ & ʟᴀɢꜰʀᴇᴇ ᴍᴜꜱɪᴄꜱ 🦋
 ‣ ᴇᴠᴇʀʏᴏɴᴇ ᴘʟᴇᴀsᴇ sʜᴏᴡ ᴜʀ ʟᴏᴠᴇ 🥹
 
-/start """
+/start"""
 
+caption = f"""{AUTO_GCAST_MSG}""" if AUTO_GCAST_MSG else MESSAGE
+
+async def send_text_once():
+    try:
+        await app.send_message(LOGGER_ID, TEXT)
+    except Exception as e:
+        pass
+
+async def send_message_to_chats():
+    try:
+        chats = await get_served_chats()
+
+        for chat_info in chats:
+            chat_id = chat_info.get("chat_id")
+            if isinstance(chat_id, int):  # Check if chat_id is an integer
+                try:
+                    await asyncio.sleep(
+                        20
+                    )  # Sleep for 20 seconds between sending messages
+                except Exception as e:
+                    pass  # Do nothing if an error occurs while sending message
+    except Exception as e:
+        pass  # Do nothing if an error occurs while fetching served chats
 
 async def continuous_broadcast():
     await send_text_once()  # Send TEXT once when bot starts
