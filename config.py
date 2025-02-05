@@ -99,17 +99,17 @@ confirmer = {}
 
 
 START_IMG_URL = getenv(
-    "START_IMG_URL", "https://files.catbox.moe/6u77kv.jpg"
+    "START_IMG_URL", "https://files.catbox.moe/eq0iql.jpg"
 )
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://files.catbox.moe/6u77kv.jpg"
+    "PING_IMG_URL", "https://files.catbox.moe/eq0iql.jpg"
 )
-PLAYLIST_IMG_URL = "https://files.catbox.moe/6u77kv.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/6u77kv.jpg"
-TELEGRAM_AUDIO_URL = "https://files.catbox.moe/6u77kv.jpg"
-TELEGRAM_VIDEO_URL = "https://files.catbox.moe/6u77kv.jpg"
-STREAM_IMG_URL = "https://files.catbox.moe/6u77kv.jpg"
-SOUNCLOUD_IMG_URL = "https://files.catbox.moe/6u77kv.jpg"
+PLAYLIST_IMG_URL = "https://files.catbox.moe/eq0iql.jpg"
+STATS_IMG_URL = "https://files.catbox.moe/eq0iql.jpg"
+TELEGRAM_AUDIO_URL = "https://files.catbox.moe/eq0iql.jpg"
+TELEGRAM_VIDEO_URL = "https://files.catbox.moe/eq0iql.jpg"
+STREAM_IMG_URL = "https://files.catbox.moe/eq0iql.jpg"
+SOUNCLOUD_IMG_URL = "https://files.catbox.moe/eq0iql.jpg"
 YOUTUBE_IMG_URL = "https://files.catbox.moe/6u77kv.jpg"
 SPOTIFY_ARTIST_IMG_URL = "https://files.catbox.moe/6u77kv.jpg"
 SPOTIFY_ALBUM_IMG_URL = "https://files.catbox.moe/6u77kv.jpg"
