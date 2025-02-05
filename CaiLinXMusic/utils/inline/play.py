@@ -68,10 +68,10 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=" ပိုင်ရှင် ", url=f"https://t.me/ZuriOfficialBoy"
+                text=" ပိုင်ရှင် ", url=f"https://t.me/iwillgoforwardalone"
             ),
             InlineKeyboardButton(
-                text=" ပိုမိုသိရှိရန် ", url=f"https://t.me/ZuriOfficialUpdate"
+                text=" ပိုမိုသိရှိရန် ", url=f"https://t.me/asainmapyayparbuu"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -90,10 +90,10 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text=" ပိုင်ရှင် ", url=f"https://t.me/ZuriOfficialBoy"
+                text=" ပိုင်ရှင် ", url=f"https://t.me/iwillgoforwardalone"
             ),
             InlineKeyboardButton(
-                text=" ပိုမိုသိရှိရန် ", url=f"https://t.me/ZuriOfficialUpdate"
+                text=" ပိုမိုသိရှိရန် ", url=f"https://t.me/asainmapyayparbuu"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
